@@ -7,4 +7,6 @@ router.post("/", restaurantController.create);
 router.get("/:id", restaurantController.show);
 router.get("/restaurant_name/:restaurant_name", restaurantController.showName);
 router.put("/:id", restaurantController.update);
-router.delete("/:id", restaurantController);
+router.delete("/:id", restaurantController.destroy);
+
+module.exports = router;

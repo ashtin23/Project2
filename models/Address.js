@@ -6,11 +6,7 @@
 //   formatted: String,
 //   street: String,
 //   state: String,
-//   postal_code: Number,
-//   restaurant: {
-//       type: Schema.Types.ObjectId,
-//       ref: "Restaurant"
-//   }
+//   postal_code: Number
 // });
 
-// module.exports = mongoose.model("Address", addressSchema);
+// module.exports = addressSchema
