@@ -4,9 +4,9 @@ const restaurantController = require("../controllers/restaurant");
 
 router.get("/", restaurantController.index);
 router.post("/", restaurantController.create);
-router.get("/:id", restaurantController.show);
+router.get("/restaurant_id/:restaurant_id", restaurantController.show);
 router.get("/restaurant_name/:restaurant_name", restaurantController.showName);
-router.put("/:id", restaurantController.update);
-router.delete("/:id", restaurantController.destroy);
+router.put("/restaurant_id/:restaurant_id", restaurantController.update);
+router.delete("/restaurant_id/:restaurant_id", restaurantController.destroy);
 
 module.exports = router;

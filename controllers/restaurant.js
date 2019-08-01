@@ -8,7 +8,7 @@ module.exports = {
         Restaurant.create(req.body).then(restaurant => res.json(restaurant));
     },
     show: function(req, res) {
-        Restaurant.findById(req.params.id).then(restaurant => res.json(show));
+        Restaurant.findOne({restaurant_id: req.params.restaurant_id}).then(restaurant => res.json(show));
     },
     showName: function(req, res) {
         Restaurant.findOne({restaurant_name: req.params.restaurant_name}).then(restaurant =>
