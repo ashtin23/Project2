@@ -9,4 +9,4 @@ const addressSchema = new Schema({
   postal_code: Number
 });
 
-module.exports = addressSchema
+module.exports = addressSchema;
