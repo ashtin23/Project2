@@ -1,11 +1,10 @@
 # Project2
 Build a JSON API
 
-$project
+My First Application
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+This application will allow you access to a database of over 350,000 restaurant menus in the U.S.
 
 Look how easy it is to use:
 
