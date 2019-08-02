@@ -43,6 +43,8 @@ req.end(function(res) {
 app.use("/restaurant/", require("./routes/restaurant"));
 app.use("/cuisine/", require("./routes/cuisine"));
 
-app.listen(3000, () => {
-  console.log("app listening on port 3000");
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
 });
