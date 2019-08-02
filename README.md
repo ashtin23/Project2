@@ -21,7 +21,7 @@ Features
 Installation
 ------------
 
-Install $project by running:
+Install this application by running:
 
     install project
 

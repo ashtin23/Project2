@@ -8,7 +8,7 @@ app.use(parser.json());
 app.use(parser.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.redirect("/restaurant/");
 });
 
 var req = unirest(
@@ -48,3 +48,6 @@ app.set("port", process.env.PORT || 8080);
 app.listen(app.get("port"), () => {
   console.log(`✅ PORT: ${app.get("port")} 🌟`);
 });
+
+
+// mongodb+srv://ashtin23:buckeye92@cluster0-jewhj.mongodb.net/test?retryWrites=true&w=majority
