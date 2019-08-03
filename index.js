@@ -1,6 +1,6 @@
 const express = require("express");
 const parser = require("body-parser");
-const fs = require("fs");
+// const fs = require("fs");
 var unirest = require("unirest");
 const app = express();
 
@@ -30,14 +30,6 @@ req.headers({
 
 req.end(function(res) {
   if (res.error) throw new Error(res.error);
-
-  fs.writeFile("./restaurant.json", JSON.stringify(res), err => {
-    if (err) {
-      console.error(err);
-    } else {
-      // console.log(res);
-    }
-  });
 });
 
 app.use("/restaurant/", require("./routes/restaurant"));
