@@ -5,7 +5,7 @@ var unirest = require("unirest");
 const app = express();
 
 app.use(parser.json());
-app.use(parser.urlencoded({ extended: false }));
+app.use(parser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.redirect("/restaurant");
@@ -41,4 +41,4 @@ app.listen(app.get("port"), () => {
   console.log(`✅ PORT: ${app.get("port")} 🌟`);
 });
 
-// mongodb+srv://ashtin23:buckeye92@cluster0-jewhj.mongodb.net/test?retryWrites=true&w=majority
+// mongodb+srv://ashtin23:buckeye92@cluster0-iqzmf.mongodb.net/test?retryWrites=true&w=majority
